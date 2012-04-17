@@ -5,6 +5,9 @@
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 
+# This is necessary for the Ctrl-s keyboard shortcut to make it through to Vim
+stty -ixon
+
 # RVM
 if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
 
