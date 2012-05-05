@@ -2,6 +2,17 @@
 # from the http://peepcode.com page on zsh prompt and just tweaked
 # it all a bit to use the colors I want and to make it work relative
 # to my .zsh directory setup.
+
+# Prompt
+local smiley="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}☹%{$reset_color%})"
+
+PROMPT='
+%~
+${smiley}  %{$reset_color%}'
+
+RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/.zsh/bin/git-cwd-info.rb)%{$reset_color%}'
+
+# Environment
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 
@@ -15,16 +26,6 @@ if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
 autoload -U colors
 colors
 setopt prompt_subst
-
-# Prompt
-local smiley="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}☹%{$reset_color%})"
-
-PROMPT='
-%~
-${smiley}  %{$reset_color%}'
-
-RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/.zsh/bin/git-cwd-info.rb)%{$reset_color%}'
-
 # Show completion on first TAB
 setopt menucomplete
 
