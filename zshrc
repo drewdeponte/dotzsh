@@ -12,6 +12,17 @@ ${smiley}  %{$reset_color%}'
 
 RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/.zsh/bin/git-cwd-info.rb)%{$reset_color%}'
 
+# Set the term to xterm at 16 colors rather than the xterm-256color mode
+# which tells it to use 256 colors. It is important that terminal themes
+# intended for 16 colors are used in 16 color mode and themes intended
+# for 256 colors are used in 256 color mode. Otherwise, the colors won't
+# look correct. This also goes for Vim color schemes.
+#
+# Currently I have this set to xterm in 16 color mode as I have chosen
+# to use the ir_black terminal theme and ir_black vim theme which are
+# both intended for 16 color mode.
+export TERM=xterm
+
 # Environment
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
