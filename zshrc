@@ -21,7 +21,7 @@ RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/.zsh/bin/git-cwd-info.rb)%{$
 # Currently I have this set to xterm in 16 color mode as I have chosen
 # to use the ir_black terminal theme and ir_black vim theme which are
 # both intended for 16 color mode.
-export TERM=xterm
+export TERM=xterm-256color
 
 # Environment
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
@@ -56,6 +56,11 @@ alias be='bundle exec'
 alias bec='be cucumber'
 alias ber='be rspec --color --drb'
 alias beg='be guard'
+
+# Tmux session aliases.
+alias rpp_web_app='~/.tmux/rpp_web_app.sh'
+alias cyph='~/.tmux/cyph.sh'
+alias octopusci='~/.tmux/octopusci.sh'
 
 # My default editor settings
 export EDITOR="vim"
