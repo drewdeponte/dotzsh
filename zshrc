@@ -64,6 +64,7 @@ alias beg='be guard'
 alias rpp_web_app='~/.tmux/rpp_web_app.sh'
 alias cyph='~/.tmux/cyph.sh'
 alias octopusci='~/.tmux/octopusci.sh'
+alias ustackit='~/.tmux/ustackit.sh'
 
 # My default editor settings
 export EDITOR="vim"
