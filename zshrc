@@ -57,7 +57,7 @@ alias g="git"
 # Bundle aliases
 alias be='bundle exec'
 alias bec='be cucumber'
-alias ber='be rspec --color --drb'
+alias ber='be rspec --color'
 alias beg='be guard'
 
 # Tmux session aliases.
