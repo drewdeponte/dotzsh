@@ -65,6 +65,7 @@ alias rpp_web_app='~/.tmux/rpp_web_app.sh'
 alias cyph='~/.tmux/cyph.sh'
 alias octopusci='~/.tmux/octopusci.sh'
 alias ustackit='~/.tmux/ustackit.sh'
+alias thrift_jms_map_json='~/.tmux/thrift_jms_map_json.sh'
 
 # My default editor settings
 export EDITOR="vim"
