@@ -67,6 +67,7 @@ alias octopusci='~/.tmux/octopusci.sh'
 alias ustackit='~/.tmux/ustackit.sh'
 alias thrift_jms_map_json='~/.tmux/thrift_jms_map_json.sh'
 alias rlapi_ruby='~/.tmux/rlapi_ruby.sh'
+alias replywise_reachlocal_event_consumer='~/.tmux/replywise_reachlocal_event_consumer.sh'
 
 # My default editor settings
 export EDITOR="vim"
