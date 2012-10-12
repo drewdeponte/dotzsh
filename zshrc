@@ -24,7 +24,7 @@ RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/.zsh/bin/git-cwd-info.rb)%{$
 export TERM=xterm-256color
 
 # Environment
-export PATH="$HOME/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/bin:$HOME/android-sdk-macosx/tools:$HOME/android-sdk-macosx/platform-tools:/usr/local/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/${JAVA_HOME}"
 
