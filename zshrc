@@ -26,6 +26,7 @@ export TERM=xterm-256color
 # Environment
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
+export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/${JAVA_HOME}"
 
 # Enable vi's normal mode for editing the command line after you hit escape.
 set -o vi
