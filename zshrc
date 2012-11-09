@@ -65,7 +65,7 @@ alias ber='be rspec --color'
 alias beg='be guard'
 
 # Tmux session aliases.
-alias rpp_web_app='~/.tmux/rpp_web_app.sh'
+alias rpp_web_app='~/code/rpp_web_app/stmux'
 alias cyph='~/.tmux/cyph.sh'
 alias octopusci='~/.tmux/octopusci.sh'
 alias octopusci-head='~/.tmux/octopusci-head.sh'
