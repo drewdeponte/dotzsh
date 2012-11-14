@@ -30,7 +30,22 @@ install this **.zsh** setup using the instructions below.
 
 ## Installation
 
+To install this **.zsh** setup simply run the following commands.
+
     cd ~/
     git clone git@github.com:cyphactor/dotzsh.git ~/.zsh
     ln -s ~/.zsh/zshrc .zshrc
 
+## Update
+
+To get the latest version of this setup at any time simply run the following
+commands.
+
+    cd ~/.zsh
+    git pull --ff-only
+
+Thats it! Assuming you didn't have any local commits that prevent it from
+being fast-forwarded when pulled in. If you do happen to have local changes
+commited to the **master** branch locally, you should really create a new
+topic branch pointing to them and reset --hard your local master back to the
+official origins remote master.
