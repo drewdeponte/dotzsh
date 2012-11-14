@@ -10,7 +10,11 @@ PROMPT='
 %~
 ${smiley}  %{$reset_color%}'
 
-RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/.zsh/bin/git-cwd-info.rb)%{$reset_color%}'
+if [ -e ~/.rvm/bin/rvm-prompt ]; then
+  RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/.zsh/bin/git-cwd-info.rb)%{$reset_color%}'
+else
+  RPROMPT='%{$fg[white]%} $(~/.zsh/bin/git-cwd-info.rb)%{$reset_color%}'
+fi
 
 # Set the term to xterm at 16 colors rather than the xterm-256color mode
 # which tells it to use 256 colors. It is important that terminal themes
