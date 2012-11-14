@@ -3,6 +3,31 @@
 This is my personal **.zsh** directory setup which contains my **.zshrc** and
 any dependency scripts that my **.zshrc** uses most likely for its prompts.
 
+## Why use this **.zsh** setup.
+
+This *.zsh* setup provides a number of very useful features which are
+outlined below and a number of wich can be seen in the screenshot below.
+
+* Path in upper left prompt out of the way of normal command prompt
+* Last command success/failure respective smiley/frown icon
+* RVM prompt showing current ruby version and gemset if found
+* Time since last git commit (less than 10 min - gray, greater than 10 min but
+  less than 30 min yellow, greater than 30 mins - red). This is simply useful
+  as reminder to try to keep your git commits small and logically chunked.
+* The currently checkout branch when you are in a git repository.
+* SHA1 of the HEAD when you are in a Git repository.
+* Local git repository dirty bit to tell you what your local un-staged
+  changes.
+* Git command line tab completion including support for most git command
+  arguments and switches as well.
+* Zsh is almost 100% compatible with Bash so all your Bash knowledge is still
+  valuable.
+
+To see how the various features listed above appear when using this *.zsh*
+setup please checkout the screenshot below.
+
+![Screenshot showing most of the features](https://www.evernote.com/shard/s78/sh/711fc91d-7825-41a0-82f5-ee94412974d6/108cdc9725acfe56c38b9632448850ef/res/3b392228-a979-4f1a-844f-9112115eeff2/skitch.png)
+
 ## Set shell to /bin/zsh
 
 If you are on a Mac OS X box and want to use this **.zsh** setup you have to
@@ -49,3 +74,14 @@ being fast-forwarded when pulled in. If you do happen to have local changes
 commited to the **master** branch locally, you should really create a new
 topic branch pointing to them and reset --hard your local master back to the
 official origins remote master.
+
+# Credit
+
+I must give credit where credit is due. I have taken pieces of various peoples
+*.zsh* setups over the years to build this one. The primary two that I can
+think of are the [PeepCode - My Command Line
+Prompt](http://peepcode.com/blog/2012/my-command-line-prompt) blog post, and
+stuff I have seen Gary Bernhardt of [Destroy All
+Software](http://www.destroyallsoftware.com) do. My prompt looks very similar
+to the PeepCode layout though I have reworked the scripts largely and to allow
+for other features I provided and to make it generic and easily installed.
