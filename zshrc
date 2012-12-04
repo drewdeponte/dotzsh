@@ -32,6 +32,9 @@ export PATH="$HOME/bin:$HOME/android-sdk-macosx/tools:$HOME/android-sdk-macosx/p
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/${JAVA_HOME}"
 
+export RACK_ENV="development"
+export PORT=8000
+
 # set the number of open files to be 1024
 ulimit -S -n 1024
 
