@@ -86,3 +86,6 @@ alias capture_api='~/code/reachlocal/capture_api/stmux'
 
 # My default editor settings
 export EDITOR="vim"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
