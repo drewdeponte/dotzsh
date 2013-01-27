@@ -70,6 +70,7 @@ alias be='bundle exec'
 alias bec='be cucumber'
 alias ber='be rspec --color'
 alias beg='be guard'
+alias gsb='for k in `git branch|perl -pe "s/^..//"`;do echo -e `git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k|head -n 1`\\t$k;done|sort -r'
 
 # Tmux session aliases.
 alias rpp_web_app='~/code/rpp_web_app/stmux'
