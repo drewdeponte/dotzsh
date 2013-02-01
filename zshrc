@@ -28,7 +28,7 @@ fi
 export TERM=xterm-256color
 
 # Environment
-export PATH="$HOME/bin:$HOME/android-sdk-macosx/tools:$HOME/android-sdk-macosx/platform-tools:/usr/local/bin:/opt/local/dse-2.2.1/bin:/opt/local/opscenter-2.1.2/bin:$PATH"
+export PATH="$HOME/bin:$HOME/android-sdk-macosx/tools:$HOME/android-sdk-macosx/platform-tools:/usr/local/bin:/opt/local/dse-2.2.2/bin:/opt/local/opscenter-2.1.3/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/${JAVA_HOME}"
 
@@ -90,3 +90,5 @@ export EDITOR="vim"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
