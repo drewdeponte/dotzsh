@@ -28,11 +28,11 @@ fi
 export TERM=xterm-256color
 
 # Environment
-export PATH="$HOME/bin:$HOME/android-sdk-macosx/tools:$HOME/android-sdk-macosx/platform-tools:/usr/local/bin:/opt/local/dse-2.2.2/bin:/opt/local/opscenter-2.1.3/bin:$PATH"
+export PATH="$HOME/bin:$HOME/dev/tools/adt-bundle-mac-x86_64/sdk/tools:$HOME/dev/tools/adt-bundle-mac-x86_64/sdk/platform-tools:/usr/local/bin:/opt/local/dse-2.2.2/bin:/opt/local/opscenter-2.1.3/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
-export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/${JAVA_HOME}"
+export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/"
 
-export RACK_ENV="development"
+# export RACK_ENV="development"
 export PORT=8000
 
 # set the number of open files to be 1024
