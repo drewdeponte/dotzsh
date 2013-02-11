@@ -73,7 +73,7 @@ alias beg='be guard'
 alias gsb='for k in `git branch|perl -pe "s/^..//"`;do echo -e `git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k|head -n 1`\\t$k;done|sort -r'
 
 # Tmux session aliases.
-alias rpp_web_app='~/code/rpp_web_app/stmux'
+alias rpp_web_app='~/code/reachlocal/rpp_web_app/stmux'
 alias cyph='~/.tmux/cyph.sh'
 alias octopusci='~/.tmux/octopusci.sh'
 alias octopusci-head='~/.tmux/octopusci-head.sh'
