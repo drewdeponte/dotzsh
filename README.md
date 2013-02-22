@@ -60,6 +60,7 @@ To install this **.zsh** setup simply run the following commands.
     cd ~/
     git clone git@github.com:cyphactor/dotzsh.git ~/.zsh
     ln -s ~/.zsh/zshrc .zshrc
+    ln -s ~/.zsh/zshenv .zshenv
 
 ## Update
 
