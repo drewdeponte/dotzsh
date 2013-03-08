@@ -46,6 +46,7 @@ alias replywise_reachlocal_event_consumer='~/.tmux/replywise_reachlocal_event_co
 alias todo='~/.tmux/todos.sh'
 alias codebreakdown='~/code/bbsoft/codebreakdown/stmux'
 alias capture_api='~/code/reachlocal/capture_api/stmux'
+alias edge-mobile-gateway='~/code/reachlocal/edge-mobile-gateway/stmux'
 
 # My default editor settings
 export EDITOR="vim"
