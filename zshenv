@@ -1,5 +1,5 @@
 # Environment
-export PATH="$HOME/bin:$HOME/dev/tools/adt-bundle-mac-x86_64/sdk/tools:$HOME/dev/tools/adt-bundle-mac-x86_64/sdk/platform-tools:/usr/local/bin:/opt/local/dse-2.2.2/bin:/opt/local/opscenter-2.1.3/bin:$PATH"
+export PATH="$HOME/bin:$HOME/dev/tools/adt-bundle-mac-x86_64/sdk/tools:$HOME/dev/tools/adt-bundle-mac-x86_64/sdk/platform-tools:/usr/local/bin:/opt/local/dse-2.2.2/bin:/opt/local/opscenter-2.1.3/bin:/usr/local/share/npm/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/"
 
@@ -47,6 +47,7 @@ alias todo='~/.tmux/todos.sh'
 alias codebreakdown='~/code/bbsoft/codebreakdown/stmux'
 alias capture_api='~/code/reachlocal/capture_api/stmux'
 alias edge-mobile-gateway='~/code/reachlocal/edge-mobile-gateway/stmux'
+alias orangecal_mobile='~/code/oldtown/orangecal_mobile/stmux'
 
 # My default editor settings
 export EDITOR="vim"
