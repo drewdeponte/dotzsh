@@ -48,6 +48,7 @@ alias codebreakdown='~/code/bbsoft/codebreakdown/stmux'
 alias capture_api='~/code/reachlocal/capture_api/stmux'
 alias edge-mobile-gateway='~/code/reachlocal/edge-mobile-gateway/stmux'
 alias orangecal_mobile='~/code/oldtown/orangecal_mobile/stmux'
+alias orangecal='~/code/oldtown/orangecal/stmux'
 
 # My default editor settings
 export EDITOR="vim"
