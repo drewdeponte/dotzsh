@@ -29,6 +29,7 @@ export TERM=xterm-256color
 
 # Enable vi's normal mode for editing the command line after you hit escape.
 set -o vi
+set -o emacs
 
 # This is necessary for the Ctrl-s keyboard shortcut to make it through to Vim
 stty -ixon
