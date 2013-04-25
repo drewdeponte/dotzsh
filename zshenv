@@ -46,6 +46,7 @@ alias replywise_reachlocal_event_consumer='~/.tmux/replywise_reachlocal_event_co
 alias todo='~/.tmux/todos.sh'
 alias codebreakdown='~/code/bbsoft/codebreakdown/stmux'
 alias capture_api='~/code/reachlocal/capture_api/stmux'
+alias capture_js_config_api='~/code/reachlocal/capture_js_config_api/stmux'
 alias edge-mobile-gateway='~/code/reachlocal/edge-mobile-gateway/stmux'
 alias orangecal_mobile='~/code/oldtown/orangecal_mobile/stmux'
 alias orangecal='~/code/oldtown/orangecal/stmux'
