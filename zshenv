@@ -1,5 +1,5 @@
 # Environment
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/heroku/bin:/usr/local/share/npm/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/heroku/bin:/usr/local/share/npm/bin:/usr/local/texlive/2013basic/bin/x86_64-darwin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/"
 
