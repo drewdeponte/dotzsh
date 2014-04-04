@@ -12,6 +12,8 @@ ${smiley}  %{$reset_color%}'
 
 if [ -e ~/.rvm/bin/rvm-prompt ]; then
   RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/.zsh/bin/git-cwd-info.rb)%{$reset_color%}'
+elif [ -e ~/.zsh/bin/rbenv-prompt ]; then
+  RPROMPT='%{$fg[white]%} $(~/.zsh/bin/rbenv-prompt)$(~/.zsh/bin/git-cwd-info.rb)%{$reset_color%}'
 else
   RPROMPT='%{$fg[white]%} $(~/.zsh/bin/git-cwd-info.rb)%{$reset_color%}'
 fi
