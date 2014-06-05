@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-version_string=$(rbenv version-name)
+version_string=$(/usr/local/bin/rbenv version-name)
 
 [ -f "$(pwd)/.rbenv-gemsets" ] && gemset_string=" ⟡$(rbenv gemset active | cut -d' ' -f1)"
 if [ ! $version_string = '' ]; then
