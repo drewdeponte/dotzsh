@@ -1,10 +1,21 @@
 # Environment
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/heroku/bin:/usr/local/share/npm/bin:/usr/local/texlive/2013basic/bin/x86_64-darwin:$PATH"
+export PATH="$HOME/bin:$HOME/.jenv/shims:/usr/local/sbin:/usr/local/bin:/usr/local/heroku/bin:/usr/local/share/npm/bin:/usr/local/texlive/2013basic/bin/x86_64-darwin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/"
 
 # export RACK_ENV="development"
 export PORT=8000
+
+# Helper functions for cassandra
+function start_cassandra() {
+  jenv shell 1.7
+  cassandra -f
+}
+
+function start_dse() {
+  jenv shell 1.6
+  /opt/local/dse-2.2.1/bin/dse cassandra -f
+}
 
 # set the number of open files to be 1024
 ulimit -S -n 1024
@@ -67,3 +78,5 @@ export EDITOR="vim"
 # RVM
 if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# jenv
+eval "$(jenv init - --no-rehash)"
