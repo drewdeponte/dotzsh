@@ -3,6 +3,7 @@ export PATH="$HOME/bin:$HOME/.jenv/shims:/usr/local/sbin:/usr/local/bin:/usr/loc
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/"
 source ~/.zsh/homebrew.sh
+source ~/.zsh/andrewdeponte_dot_com_middleman_s3_sync_creds
 
 # export RACK_ENV="development"
 export PORT=8000
