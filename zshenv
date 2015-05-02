@@ -75,8 +75,8 @@ alias orangecal='~/code/oldtown/orangecal/stmux'
 # My default editor settings
 export EDITOR="vim"
 
-# RVM
-if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
-# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# rbenv
+eval "$(rbenv init - --no-rehash)"
+
 # jenv
 eval "$(jenv init - --no-rehash)"
