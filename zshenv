@@ -27,6 +27,14 @@ setopt prompt_subst
 # Show completion on first TAB
 setopt menucomplete
 
+# History
+export HISTFILE=~/.history
+export HISTSIZE=1000
+export SAVEHIST=1000
+
+setopt inc_append_history # append history item at execution
+setopt hist_ignore_dups # ignore dups that immediately follow eachother
+
 # Load completions for Ruby, Git, etc.
 autoload compinit
 compinit
