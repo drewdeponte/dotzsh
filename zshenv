@@ -86,7 +86,7 @@ alias orangecal='~/code/oldtown/orangecal/stmux'
 export EDITOR="vim"
 
 # rbenv
-eval "$(rbenv init - --no-rehash)"
+if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
 
 # jenv
-eval "$(jenv init - --no-rehash)"
+if which jenv > /dev/null; then eval "$(jenv init - --no-rehash)"; fi
