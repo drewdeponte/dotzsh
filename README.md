@@ -26,7 +26,7 @@ outlined below and a number of wich can be seen in the screenshot below.
 To see how the various features listed above appear when using this *.zsh*
 setup please checkout the screenshot below.
 
-![Screenshot showing most of the features](https://www.evernote.com/shard/s78/sh/711fc91d-7825-41a0-82f5-ee94412974d6/108cdc9725acfe56c38b9632448850ef/res/3b392228-a979-4f1a-844f-9112115eeff2/skitch.png)
+![Screenshot showing most of the features](images/prompt_screenshot.png?raw=true)
 
 ## Set shell to /bin/zsh
 
