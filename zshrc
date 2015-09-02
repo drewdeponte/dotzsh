@@ -197,7 +197,11 @@ export VISUAL="vim"
 # Rbenv
 #########################
 
-if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
+if which rbenv > /dev/null; then
+  if [ "$(type rbenv)" = "rbenv is /usr/local/bin/rbenv" ]; then
+    eval "$(rbenv init - --no-rehash)"
+  fi
+fi
 
 #########################
 # Jenv
