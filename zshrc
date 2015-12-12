@@ -117,6 +117,7 @@ alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"
 # Git aliases
 alias g="git"
 alias fetch="echo 'Good boy! Go get those branches!' && git fetch --all -p && animals"
+alias gco="git co \$(git branch | selecta)"
 
 #########################
 # Ruby/Rails Aliases
