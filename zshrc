@@ -7,11 +7,9 @@
 # Prompt
 #########################
 
-local smiley="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}☹%{$reset_color%})"
-
 PROMPT='
 %~
-${smiley}  %{$reset_color%}'
+%(?,%{$fg[green]%}✔%{$reset_color%},%{$fg[red]%}✘%{$reset_color%}) %{$reset_color%}'
 
 if [ -e ~/.rvm/bin/rvm-prompt ]; then
   RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/.zsh/bin/git-cwd-info.rb)%{$reset_color%}'
