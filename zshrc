@@ -208,4 +208,4 @@ if which jenv > /dev/null; then eval "$(jenv init - --no-rehash)"; fi
 # Boot2Docker
 #########################
 
-eval "$(boot2docker shellinit 2>/dev/null)"
+# eval "$(boot2docker shellinit 2>/dev/null)"
