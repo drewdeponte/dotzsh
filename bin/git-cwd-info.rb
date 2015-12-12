@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env ruby --disable-gems
 # -*- coding: utf-8 -*-
 
 # Emits Git metadata for use in a Zsh prompt.
@@ -39,11 +39,15 @@ $pomodoro_bad_color = $color_codes[:red]
 $pomodoro_approaching_color = $color_codes[:yellow]
 
 def minutes_since_last_commit
-  time_of_now_in_seconds = `date +%s`.to_i
-  time_of_last_commit_in_seconds = `git log --pretty=format:'%at' -1`.to_i
-  seconds_since_last_commit = time_of_now_in_seconds - time_of_last_commit_in_seconds
-  minutes_since_last_commit = seconds_since_last_commit / 60
-  return minutes_since_last_commit
+  if File.directory?('.git')
+    time_of_now_in_seconds = `date +%s`.to_i
+    time_of_last_commit_in_seconds = `git log --pretty=format:'%at' -1`.to_i
+    seconds_since_last_commit = time_of_now_in_seconds - time_of_last_commit_in_seconds
+    minutes_since_last_commit = seconds_since_last_commit / 60
+    return minutes_since_last_commit
+  else
+    return 0
+  end
 end
 
 def displayable_minutes_since_last_commit
