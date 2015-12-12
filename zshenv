@@ -8,8 +8,4 @@ export PATH="/usr/local/bin:$PATH"
 # Rbenv
 #########################
 
-if which rbenv > /dev/null; then
-  if [ "$(type rbenv)" = "rbenv is /usr/local/bin/rbenv" ]; then
-    eval "$(rbenv init - --no-rehash)"
-  fi
-fi
+if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
