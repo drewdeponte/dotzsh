@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 set -e
 
-version_string=$(/usr/local/bin/rbenv version-name)
-
-[ -f "$(pwd)/.rbenv-gemsets" ] && gemset_string=" ⟡$(rbenv gemset active | cut -d' ' -f1)"
-if [ ! $version_string = '' ]; then
-  echo "$version_string$gemset_string"
+if type rbenv 2&> /dev/null; then
+  version_string=$(rbenv version-name)
+  [ -f "$(pwd)/.rbenv-gemsets" ] && gemset_string=" ⟡$(rbenv gemset active | cut -d' ' -f1)"
+  if [ ! $version_string = '' ]; then
+    echo "$version_string$gemset_string"
+  fi
+else
+  echo "rbenv is missing"
 fi
+
