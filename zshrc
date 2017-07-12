@@ -40,7 +40,6 @@ stty -ixon
 
 export PATH="$HOME/bin:$HOME/.cargo/bin:$HOME/.jenv/shims:/usr/local/sbin:/usr/local/bin:/usr/local/heroku/bin:/usr/local/share/npm/bin:/usr/local/texlive/2013basic/bin/x86_64-darwin:/usr/sbin:/sbin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
-export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/"
 source ~/.zsh/homebrew.sh
 # source ~/.zsh/andrewdeponte_dot_com_middleman_s3_sync_creds
 
@@ -203,6 +202,11 @@ if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
 #########################
 
 if which jenv > /dev/null; then eval "$(jenv init - --no-rehash)"; fi
+
+#########################
+# swiftenv
+#########################
+if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
 
 #########################
 # Boot2Docker
