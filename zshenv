@@ -9,3 +9,9 @@ export PATH="/usr/local/bin:$PATH"
 #########################
 
 if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
+
+#########################
+# Jenv
+#########################
+
+if which jenv > /dev/null; then eval "$(jenv init - --no-rehash)"; fi
