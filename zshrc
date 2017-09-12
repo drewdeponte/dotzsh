@@ -68,6 +68,7 @@ export SAVEHIST=1000
 
 setopt inc_append_history # append history item at execution
 setopt hist_ignore_dups # ignore dups that immediately follow eachother
+bindkey "^R" history-incremental-search-backward
 
 #########################
 # File Settings
