@@ -38,7 +38,8 @@ stty -ixon
 # Environment Variables
 #########################
 
-export PATH="$HOME/bin:$HOME/.cargo/bin:$HOME/.jenv/shims:/usr/local/sbin:/usr/local/bin:/usr/local/heroku/bin:/usr/local/share/npm/bin:/usr/local/texlive/2013basic/bin/x86_64-darwin:/usr/sbin:/sbin:$PATH"
+# export PATH="$HOME/bin:$HOME/.cargo/bin:$HOME/.jenv/shims:/usr/local/sbin:/usr/local/bin:/usr/local/heroku/bin:/usr/local/share/npm/bin:/usr/local/texlive/2013basic/bin/x86_64-darwin:/usr/sbin:/sbin:$PATH"
+export PATH="$HOME/bin:$HOME/.cargo/bin:/usr/local/heroku/bin:/usr/local/share/npm/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 source ~/.zsh/homebrew.sh
 # source ~/.zsh/andrewdeponte_dot_com_middleman_s3_sync_creds
@@ -207,10 +208,20 @@ if which jenv > /dev/null; then eval "$(jenv init - --no-rehash)"; fi
 #########################
 # swiftenv
 #########################
+
 if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
+
+#########################
+## pyenv
+#########################
+
+if which pyenv > /dev/null; then eval "$(pyenv init - --no-rehash)"; fi
 
 #########################
 # Boot2Docker
 #########################
 
 # eval "$(boot2docker shellinit 2>/dev/null)"
+
+# Fun Hack to srew with Chad
+# source ~/.env
