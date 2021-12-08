@@ -58,9 +58,10 @@ install this **.zsh** setup using the instructions below.
 To install this **.zsh** setup simply run the following commands.
 
     cd ~/
-    git clone git@github.com:cyphactor/dotzsh.git ~/.zsh
+    git clone git@github.com:drewdeponte/dotzsh.git ~/.zsh
     ln -s ~/.zsh/zshrc .zshrc
     ln -s ~/.zsh/zshenv .zshenv
+    ln -s ~/.zsh/zprofile .zprofile
 
 ## Update
 
