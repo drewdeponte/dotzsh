@@ -64,7 +64,7 @@ stty -ixon
 # Environment Variables
 #########################
 
-export PATH="$HOME/bin:$HOME/.cargo/bin:$HOME/.jenv/shims:/usr/local/sbin:/usr/local/bin:/usr/local/heroku/bin:/usr/local/share/npm/bin:/usr/local/texlive/2013basic/bin/x86_64-darwin:/usr/sbin:/sbin:$HOME/.datomic/cli-0.10.89:$PATH"
+export PATH="$HOME/bin:$HOME/.tmux/bin:$HOME/fvm/default/bin:$HOME/.cargo/bin:$HOME/.jenv/shims:/usr/local/sbin:/usr/local/bin:/usr/local/heroku/bin:/usr/local/share/npm/bin:/usr/local/texlive/2013basic/bin/x86_64-darwin:/usr/sbin:/sbin:$HOME/.datomic/cli-0.10.89:$PATH"
 # export PATH="$HOME/code/oss/flutter/bin:/usr/local/opt/curl/bin:$HOME/bin:$HOME/.cargo/bin:/usr/local/heroku/bin:/usr/local/share/npm/bin:$PATH"
 # export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 # source ~/.zsh/homebrew.sh
