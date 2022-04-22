@@ -226,7 +226,8 @@ function cow_norris() {
 # Editor Settings
 #########################
 
-# export VISUAL="vim"
+export VISUAL="nvim"
+export EDITOR=$VISUAL
 
 #########################
 # Rbenv
