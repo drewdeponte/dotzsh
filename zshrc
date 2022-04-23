@@ -120,7 +120,12 @@ setopt menucomplete
 #########################
 
 # Load completions for Ruby, Git, etc.
-fpath=(/opt/homebrew/share/zsh/site-functions/ $fpath)
+if [ -f "/opt/homebrew/bin/brew" ]; then
+	fpath=(/opt/homebrew/share/zsh/site-functions/ $fpath)
+fi
+if [ -f "/usr/local/bin/brew" ]; then
+	fpath=(/usr/local/share/zsh/site-functions/ $fpath)
+fi
 autoload -Uz compinit
 compinit
 
