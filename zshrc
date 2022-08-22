@@ -8,12 +8,13 @@
 #########################
 
 PROMPT='
+${FG[237]}------------------------------------------------------------%{$reset_color%}
 %~
 %(?,%{$fg[green]%}✔%{$reset_color%},%{$fg[red]%}✘%{$reset_color%}) %{$reset_color%}'
 
 # visual separater in the prompt
-setopt promptsubst
-PS1=$'%U${(r:$COLUMNS:: :)}%u'$PS1
+# setopt promptsubst
+# PS1=$'%U${(r:$COLUMNS:: :)}%u'$PS1
 
 # if [ -e ~/.rvm/bin/rvm-prompt ]; then
 #   RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/.zsh/bin/git-cwd-info.rb)%{$reset_color%}'
